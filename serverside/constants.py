@@ -37,7 +37,7 @@ Use the following constants for generating widget previews on the admin console
 These are API constants.
 """
 CONSOLE_GET_WIDGET_DEV = "http://localhost:8080/api/1/getwidget"
-CONSOLE_GET_WIDGET_PROD = SECURE_PRODUCTION_URL + "/api/1/getwidget"
+CONSOLE_GET_WIDGET_PROD = PRODUCTION_URL + "/api/1/getwidget"
 
 AES_ENCRYPTION_KEYNAME = "aes_encryption_key"
 ENCRYPTION_KEYNAME = "encryption_key"
@@ -158,8 +158,8 @@ class WEB_SIGNUP_URLS:
     REDIRECT_HOME = "/html/index.html"
     REDIRECT_SIGNUP = "/html/signup.html"
   else:
-    POST_DATA = SECURE_PRODUCTION_URL + "/signup" # need to use https URL for posting credentials
-    ACTIVATE_URL = SECURE_PRODUCTION_URL + "/signup"
+    POST_DATA = PRODUCTION_URL + "/signup" # need to use https URL for posting credentials
+    ACTIVATE_URL = PRODUCTION_URL + "/signup"
     REDIRECT_SIGNUP_SUCCESS = PRODUCTION_URL + "/html/signup_success.html"
     REDIRECT_SIGNUP_FAIL = PRODUCTION_URL + "/html/signup_failed.html"
     REDIRECT_ACTIVATE_SUCCESS = PRODUCTION_URL + "/html/activation_success.html"
