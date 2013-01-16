@@ -1,4 +1,4 @@
-# Copyright (C) 2011, CloudCaptive
+# Copyright (C) 2013, AppScale
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,20 +16,20 @@
 import os
 
 # CHANGE THIS FOR CUSTOMER DEPLOYMENTS 
-APP_NAME = "cloudcaptive-userinfuser" #os.environ['APPLICATION_ID']
-APP_OWNER_EMAIL = "raj@cloudcaptive.com"
+APP_NAME = "appscale-userinfuser" #os.environ['APPLICATION_ID']
+APP_OWNER_EMAIL = "raj@appscale.com"
 
 # Only valid for localhost testing
 # Sign up twice with these accounts to get around the email validation
-TEST_ACCOUNTS = ["raj@cloudcaptive.com","shanrandhawa@gmail.com","shan@cloudcaptive.com"]
+TEST_ACCOUNTS = ["raj@appscale.com"]
 
-ADMIN_ACCOUNT = "admin@" + APP_NAME + ".appspot.com"
+ADMIN_ACCOUNT = "admin@appscale.com"
 DEBUG = True
 ACCOUNT_TYPES = ["admin", "bronze", "silver", "gold", "platinum"]
 PAYMENT_TYPES = ["free", "trial", "paid", "exempt"]
 DEV_URL = "http://localhost:8080"
-PRODUCTION_URL= "http://"+APP_NAME+".appspot.com"
-SECURE_PRODUCTION_URL = "https://"+APP_NAME+".appspot.com"
+PRODUCTION_URL= "http://" + os.environ["NGINX_HOST"] + ":" + os.environ["NGINX_PORT"]
+SECURE_PRODUCTION_URL = "https://" + os.environ["NGINX_HOST"] + ":" + os.environ["NGINX_PORT"]
 
 
 """
@@ -37,8 +37,7 @@ Use the following constants for generating widget previews on the admin console
 These are API constants.
 """
 CONSOLE_GET_WIDGET_DEV = "http://localhost:8080/api/1/getwidget"
-CONSOLE_GET_WIDGET_PROD = "https://"+APP_NAME+".appspot.com/api/1/getwidget"
-
+CONSOLE_GET_WIDGET_PROD = SECURE_PRODUCTION_URL + "/api/1/getwidget"
 
 AES_ENCRYPTION_KEYNAME = "aes_encryption_key"
 ENCRYPTION_KEYNAME = "encryption_key"

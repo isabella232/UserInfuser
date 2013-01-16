@@ -11,7 +11,7 @@
  * Dual licensed under the MIT and GPL licenses, located in
  * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
  *
- * Date: Sat Jan 1 23:46:27 2011 -0800
+ * Date: Sat Jan 1 23:46:27 2013 -0800
  *
  */
  

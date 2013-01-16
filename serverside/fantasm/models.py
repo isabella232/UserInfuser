@@ -94,14 +94,14 @@ class _FantasmFanIn( db.Model ):
     workIndex = db.StringProperty()
     context = JSONProperty(indexed=False)
     # FIXME: createdTime only needed for scrubbing, but indexing might be a performance hit
-    #        http://ikaisays.com/2011/01/25/app-engine-datastore-tip-monotonically-increasing-values-are-bad/
+    #        http://ikaisays.com/2013/01/25/app-engine-datastore-tip-monotonically-increasing-values-are-bad/
     createdTime = db.DateTimeProperty(auto_now_add=True)
     
 class _FantasmInstance( db.Model ):
     """ A model used to to store FSMContext instances """
     instanceName = db.StringProperty()
     # FIXME: createdTime only needed for scrubbing, but indexing might be a performance hit
-    #        http://ikaisays.com/2011/01/25/app-engine-datastore-tip-monotonically-increasing-values-are-bad/
+    #        http://ikaisays.com/2013/01/25/app-engine-datastore-tip-monotonically-increasing-values-are-bad/
     createdTime = db.DateTimeProperty(auto_now_add=True)
     
 class _FantasmLog( db.Model ):
@@ -121,6 +121,6 @@ class _FantasmLog( db.Model ):
 class _FantasmTaskSemaphore( db.Model ):
     """ A model that simply stores the task name so that we can guarantee only-once semantics. """
     # FIXME: createdTime only needed for scrubbing, but indexing might be a performance hit
-    #        http://ikaisays.com/2011/01/25/app-engine-datastore-tip-monotonically-increasing-values-are-bad/
+    #        http://ikaisays.com/2013/01/25/app-engine-datastore-tip-monotonically-increasing-values-are-bad/
     createdTime = db.DateTimeProperty(auto_now_add=True)
     payload = db.StringProperty(indexed=False)

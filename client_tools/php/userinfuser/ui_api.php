@@ -1,6 +1,6 @@
 <?php
   /*
-    Copyright (C) 2011, CloudCaptive
+    Copyright (C) 2013, AppScale
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -15,8 +15,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
   */
-  define('UI_CONSTANTS_PATH','http://cloudcaptive-userinfuser.appspot.com/api/');
-  define('UI_CONSTANTS_SPATH', 'https://cloudcaptive-userinfuser.appspot.com/api/');
+  define('UI_CONSTANTS_PATH','http://appscale-userinfuser.appspot.com/api/');
+  define('UI_CONSTANTS_SPATH', 'https://appscale-userinfuser.appspot.com/api/');
   define('UI_CONSTANTS_LOCAL_TEST','http://localhost:8080/api/');
   define('UI_CONSTANTS_API_VER','1');
   define('UI_CONSTANTS_UPDATE_USER_PATH', 'updateuser');
@@ -166,7 +166,7 @@
     *        "profile_img": "http://test.com/images/raj.png",
     *        "profile_name": "Raj Chohan", 
     *        "profile_link": "http://test.com/nlake44", 
-    *        "creation_date": "2011-02-26"} 
+    *        "creation_date": "2013-02-26"} 
     * This function is always synchronous. It will add latency into 
     * your application/web site. 
     ****************************************/

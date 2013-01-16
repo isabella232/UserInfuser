@@ -1,5 +1,5 @@
 /*
- * Copyright 2011, Cloud Captive Inc.
+ * Copyright 2013, Cloud Captive Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ import org.apache.log4j.Logger;
 /**
  * Class used to communicate with the UserInfuser server.
  * 
- * @author Shan Randhawa <shan@cloudcaptive.com>
+ * @author Shan Randhawa <shan@appscale.com>
  * @version 1
  * @since 1.5
  */
@@ -133,7 +133,7 @@ public class UserInfuser
 	 * &nbsp;&nbsp;&nbsp;"profile_img": "http://test.com/images/raj.png",<br/>
 	 * &nbsp;&nbsp;&nbsp;"profile_name": "Raj Chohan",<br/>
 	 * &nbsp;&nbsp;&nbsp;"profile_link": "http://test.com/nlake44",<br/>
-	 * &nbsp;&nbsp;&nbsp;"creation_date": "2011-02-26"}<br/>
+	 * &nbsp;&nbsp;&nbsp;"creation_date": "2013-02-26"}<br/>
 	 * </code>
 	 * 
 	 */

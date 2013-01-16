@@ -1,4 +1,4 @@
-# Copyright (C) 2011, CloudCaptive
+# Copyright (C) 2013, AppScale
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -137,7 +137,7 @@ class UserInfuser():
             "profile_img": "http://test.com/images/raj.png",
             "profile_name": "Raj Chohan", 
             "profile_link": "http://test.com/nlake44", 
-            "creation_date": "2011-02-26"} 
+            "creation_date": "2013-02-26"} 
      Notes: This function is always synchronous. It will add latency into 
             your application/web site.
     """

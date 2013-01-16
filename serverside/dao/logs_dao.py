@@ -1,4 +1,4 @@
-# Copyright (C) 2011, CloudCaptive
+# Copyright (C) 2013, AppScale
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 '''
-Created on Feb 24, 2011
+Created on Feb 24, 2013
 
 DAO methods for logging. Calls paths for logging events.
 

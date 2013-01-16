@@ -1,5 +1,5 @@
 =begin
-Copyright (C) 2011 CloudCaptive
+Copyright (C) 2013 AppScale
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -33,8 +33,8 @@ class UserInfuserUnknownWidget < StandardError
 end
 
 class UserInfuser
-  UI_SPATH = "https://cloudcaptive-userinfuser.appspot.com/api/"
-  UI_PATH = "http://cloudcaptive-userinfuser.appspot.com/api/"
+  UI_SPATH = "https://appscale-userinfuser.appspot.com/api/"
+  UI_PATH = "http://appscale-userinfuser.appspot.com/api/"
   LOCAL_TEST = "http://localhost:8080/api/"
   API_VER = "1"
   VALID_WIDGETS = ["trophy_case", "milestones", "notifier", "points", "rank", "availablebadges", "leaderboard"]

@@ -1,4 +1,4 @@
-# Copyright (C) 2011, CloudCaptive
+# Copyright (C) 2013, AppScale
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -148,14 +148,14 @@ class SignUp(webapp.RequestHandler):
         if email_sent:
           message = "An email has been sent to you with a link to activate your account!"
         else:
-          message = "There was an error during account creation. Please send an email to support@cloudcaptive.com"
+          message = "There was an error during account creation. Please send an email to support@appscale.com"
         values = {"success" : True,
                   "message" : message}
         if show_links == "yes":
           values['givelinks'] = True 
         
       else:
-        message = "ERROR: An account using this email address already exists. Contact support@cloudcaptive for support."
+        message = "ERROR: An account using this email address already exists. Contact support@appscale for support."
         values = {"success" : False,
                 "message" : message}
         if show_links == "yes":
@@ -179,7 +179,7 @@ class SignUp(webapp.RequestHandler):
       if email_sent:
         message = "Sign up was a success. An activation link has been sent to your email address."
       else:
-        message = "There was an error during account creation. Please send an email to support@cloudcaptive.com"
+        message = "There was an error during account creation. Please send an email to support@appscale.com"
       values = {"success" : True,
                 "message" : message}
       if show_links == "yes":
